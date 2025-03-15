@@ -1,2 +1,2 @@
-# Handwritten-Digit-Recognition-
+
 
