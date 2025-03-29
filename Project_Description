@@ -1,0 +1,52 @@
+                                                                              HANDWRITTEN DIGIT RECOGNITION
+->This project implements a Convolutional Neural Network (CNN) to classify handwritten digits from the MNIST dataset.
+->It includes steps for loading, training, testing, and saving the model, along with an option to predict custom images.
+
+Features
+✅ Load and preprocess the MNIST dataset (grayscale, normalization, and one-hot encoding).
+✅ Build a CNN model with convolutional and pooling layers for feature extraction.
+✅ Train the model using Adam optimizer and categorical cross-entropy loss.
+✅ Save and load the trained model (cnn_mnist_model.h5).
+✅ Predict custom images using a preprocessing pipeline.
+
+Technologies Used
+TensorFlow/Keras – Deep learning framework
+NumPy – Data processing
+Pillow (PIL) – Image handling
+Matplotlib – Visualization
+
+How It Works?
+-Load the MNIST dataset and preprocess images (reshape, normalize, one-hot encode labels).
+-Define and train the CNN model on training data with validation on test data.
+-Save the trained model for future predictions.
+-Load and preprocess a custom image (grayscale, resize, invert colors, normalize).
+-Predict the digit using the trained CNN model.
+
+Setup & Usage
+1. Install Dependencies
+Ensure the required packages are installed:
+
+bash
+Copy
+Edit
+pip install tensorflow numpy pillow matplotlib
+2. Run the Training Script
+bash
+Copy
+Edit
+python train_mnist.py
+This will train and save the CNN model as cnn_mnist_model.h5.
+
+3. Predict a Custom Image
+Modify the script to use predict_custom_image('path_to_image.png', cnn_model) to test a custom handwritten digit image.
+
+Future Enhancements
+🔹 Experiment with deeper CNN architectures for improved accuracy.
+🔹 Implement data augmentation to enhance generalization.
+🔹 Add real-time digit drawing and classification.
+Looking forward to integrate it with real time problem solving scenarios (For banking,Medical services and so on)
+We can also integrate with a simple graphical user interface to make it convenient for user.
+
+Contributions
+Contributions, issues, and feature requests are welcome! Feel free to fork this repository and submit pull requests.
+
